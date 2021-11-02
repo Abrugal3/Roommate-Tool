@@ -1,8 +1,12 @@
 package org.mango.dto
 
-import java.util.*
+import io.quarkus.hibernate.orm.panache.kotlin.PanacheEntity
+import javax.persistence.Entity
 
-class Chore (var id: Long = -1,
-             var chore: String? = null,
+@Entity
+data class Chore (
+             var choreName: String? = null,
              var roommate: String? = null,
-             var date: String? = null)
+             var date: String? = null
+            ) : PanacheEntity()
+
