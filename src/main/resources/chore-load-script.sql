@@ -1,0 +1,13 @@
+insert into chore ("id", choreName, roommate, date)
+values (1, 'Sweep', 'Anthony', '11/02/2021');
+
+insert into chore ("id", choreName, roommate, date)
+values (2, 'Mop', 'Felipe', '11/06/2021');
+
+insert into chore ("id", choreName, roommate, date)
+values (3, 'Dishes', 'Grayson', '11/04/2021');
+
+insert into chore ("id", choreName, roommate, date)
+values (4, 'Laundry', 'David', '11/03/2021');
+
+select setval('hibernate_sequence', 4, true);
